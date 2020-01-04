@@ -1,4 +1,5 @@
 git+https://github.com/CiscoDevNet/webexteamssdk.git
-pyadaptivecards
 flask
 gunicorn
+config-templater
+webhooksimple

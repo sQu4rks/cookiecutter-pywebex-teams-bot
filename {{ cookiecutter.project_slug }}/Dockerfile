@@ -2,7 +2,7 @@ FROM python:3
 
 LABEL maintainer="{{ cookiecutter.email }}"
 
-RUN apt-get update -y && apt-get install -y python-pip python-dev 
+RUN apt-get update -y && apt-get install -y python-pip python-dev git
 
 COPY . /app
 
