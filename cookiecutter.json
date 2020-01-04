@@ -1,0 +1,15 @@
+{
+    "project_name": "Your Project Name",
+    "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+    "full_name": "Marcel Neidinger",
+    "email": "mneiding@cisco.com",
+    "version": "0.1.0",
+    "docker_user": "mneiding",
+    "docker_repo": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+    "docker_tag": "latest",
+    "_copy_without_render": [
+        "*.conftpl",
+        "hooks.yml",
+        "template.py"
+    ]
+}

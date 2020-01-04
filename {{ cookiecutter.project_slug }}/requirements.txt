@@ -1,0 +1,4 @@
+git+https://github.com/CiscoDevNet/webexteamssdk.git
+pyadaptivecards
+flask
+gunicorn

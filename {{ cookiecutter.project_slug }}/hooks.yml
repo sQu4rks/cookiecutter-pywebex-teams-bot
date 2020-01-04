@@ -1,0 +1,10 @@
+---
+    hooks:
+      {% for resource, events in webhooks.items() %}
+      {% for event in events %}
+      - name: "{{ resource }} {{ event }} hook"
+        resource: "{{ resource }}"
+        event: "{{ event }}"
+        target_url: "{{ remote_prefix }}/webhook/{{ resource }}/{{ event }}"
+      {% endfor %}
+      {% endfor %}

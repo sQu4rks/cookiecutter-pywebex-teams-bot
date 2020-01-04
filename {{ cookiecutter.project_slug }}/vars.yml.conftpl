@@ -1,0 +1,24 @@
+---
+adapter:
+    name: WebexTeamsWebhookManager
+    authentication:
+      access_token: "{{ WEBEX_TEAMS_ACCESS_TOKEN }}"
+    parameters:
+  
+  # Add your variables from here on
+remote_prefix: "{{ REMOTE_PREFIX }}"
+
+# You can delete (or comment out) all the webhooks you don't need/want here. 
+webhooks:
+  rooms:
+    - created
+    - updated
+  messages:
+    - created
+    - deleted
+  memberships:
+    - created
+    - updated
+    - deleted
+  attachmentActions:
+    - created
