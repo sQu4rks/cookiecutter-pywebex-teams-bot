@@ -2,7 +2,7 @@
     "project_name": "Your Project Name",
     "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
     "full_name": "Marcel Neidinger",
-    "email": "mneiding@cisco.com",
+    "email": "mn-cookiecutter@nlogn.org",
     "version": "0.1.0",
     "docker_user": "mneiding",
     "docker_repo": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
