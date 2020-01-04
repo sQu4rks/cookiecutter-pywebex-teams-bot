@@ -1,5 +1,7 @@
 # cookiecutter-pywebex-teams-bot
 
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/sQu4rks/cookiecutter-pywebex-teams-bot)
+
 A [cookiecutter](https://github.com/cookiecutter/cookiecutter) template to easily create deployable Webex Teams bots in python. 
 
 ## Features 
