@@ -7,7 +7,7 @@ Features include
 
 * Fully customizable setup of webhooks from a configuration file
 * Comes with `Dockerfile` and `docker-compose.yml` for container deployment
-* [flask](https://github.com/pallets/flask)-based served by [gunicorn](https://gunicorn.org/)
+* [flask](https://github.com/pallets/flask)-based bot served by [gunicorn](https://gunicorn.org/)
 
 ## How to use
 
@@ -35,7 +35,7 @@ $ python3 -m webhooksimple sync
 ```
 inside of your project directory. 
 
-Your bot code is ready to be used in `bot.py`. Happy coding!
+Your bot code is ready to be modified in `bot.py`. Happy coding!
 
 ### For deployment
 Once you have finished your bot you can create a docker image using the `deployment_setup.sh` script. 
@@ -46,7 +46,7 @@ This script will
 2. Create a new build of your bot image
 3. Push the newly created image to docker hub. 
 
-When deploying the container make sure to set the `WEBEX_TEAMS_ACCESS_TOKEN` and `REMOTE_PREFIX` environment variables. The `entrypoint.sh` script used by the container upon start will setup the webhooks according to these inputs. 
+When deploying the container make sure to set the `WEBEX_TEAMS_ACCESS_TOKEN` and `REMOTE_PREFIX` environment variables. The `entrypoint.sh` script used by the container upon start will setup the webhooks according to these environment variables. 
 
 ## Additional options
 
