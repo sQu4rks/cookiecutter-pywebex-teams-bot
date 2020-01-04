@@ -1,5 +1,5 @@
 vars.yml
 docker-compose.yml
 developer_setup.sh
-deploymnet_setup.sh
+deployment_setup.sh
 template.py
