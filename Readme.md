@@ -1,6 +1,6 @@
 # cookiecutter-pywebex-teams-bot
 
-A [cookiecutter](https://github.com/cookiecutter/cookiecutter) template to easily create production-ready and deployable Webex Teams bots in python. 
+A [cookiecutter](https://github.com/cookiecutter/cookiecutter) template to easily create deployable Webex Teams bots in python. 
 
 ## Features 
 Features include
