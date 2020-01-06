@@ -9,10 +9,18 @@ import sys
 
 from flask import Flask, request, jsonify
 from webexteamssdk import WebexTeamsAPI
-
+from cards import make_card_payload, ResponseCard
 
 api = WebexTeamsAPI()
 app = Flask(__name__)
+
+def send_card(personEmail, card):
+    """This is a sample function to show how you can send a adaptive card 
+    using pyadaptivecard and the webexteamssdk
+    """
+    attachment = make_card_payload(card)
+    
+    api.messages.create(toPersonEmail=personEmail, markdown="fallback text", attachments=[attachment,])
 
 @app.route('/alive')
 def alive():
