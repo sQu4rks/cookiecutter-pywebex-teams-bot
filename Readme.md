@@ -7,7 +7,8 @@ A [cookiecutter](https://github.com/cookiecutter/cookiecutter) template to easil
 ## Features 
 Features include
 
-* Fully customizable setup of webhooks from a configuration file
+* Fully customizable setup of webhooks from a configuration file using [webhooksimple](https://github.com/CiscoSE/webhooksimple)
+* Comes with support for [adaptive cards](https://adaptivecards.io/) in native python (using [pyadaptivecards](https://github.com/CiscoSE/pyadaptivecards))
 * Comes with `Dockerfile` and `docker-compose.yml` for container deployment
 * [flask](https://github.com/pallets/flask)-based bot served by [gunicorn](https://gunicorn.org/)
 
